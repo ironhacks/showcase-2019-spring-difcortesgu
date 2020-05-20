@@ -1,12 +1,12 @@
 //CONSTANTES
-//const geoShapesURL = "https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/nycd/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson";
+const geoShapesURL = "https://services5.arcgis.com/GfwWNkhOj9bNBqoJ/ArcGIS/rest/services/NYC_Community_Districts/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson";
 const crimesURL = "https://data.cityofnewyork.us/resource/9s4h-37hy.json?cmplnt_fr_dt=2015-12-31T00:00:00.000";
 const namesURL = "https://data.cityofnewyork.us/api/views/xyye-rtrs/rows.json?accessType=DOWNLOAD";
 const buildingsURL = "https://data.cityofnewyork.us/api/views/hg8x-zxpr/rows.json?accessType=DOWNLOAD";
 //---------------------------------------------
 //Importando geoShapes
-//var formas = fetch(geoShapesURL)
-//  	.then((response) => response.json());
+var formas = fetch(geoShapesURL)
+  	.then((response) => response.json());
 //Importando crimenes
 var crimenes = fetch(crimesURL)
   	.then((response) => response.json());
